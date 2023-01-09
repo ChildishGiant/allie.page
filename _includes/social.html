@@ -49,6 +49,9 @@
             {%- if site.wikidata_id -%}
             <a href="https://www.wikidata.org/wiki/{{ site.wikidata_id }}" title="Wikidata"><i class="fas fa-barcode"></i></a>
             {% endif %}
+            {%- if site.wikipedia_id -%}
+            <a href="https://wikipedia.org/wiki/User:{{ site.wikipedia_id }}" title="Wikipedia"><i class="fab fa-wikipedia-w"></i></a>
+            {% endif %}
             {%- if site.strava_userid -%}
             <a href="https://www.strava.com/athletes/{{ site.strava_userid }}" title="Strava"><i class="fab fa-strava"></i></a>
             {% endif %}
@@ -90,6 +93,9 @@
             {% endif %}
             {%- if site.discord_id -%}
             <a href="https://discord.com/users/{{ site.discord_id }}" title="Discord"><i class="fab fa-discord"></i></a>
+            {% endif %}
+            {%- if site.itch_id -%}
+            <a href="https://{{ site.itch_id }}.itch.io/" title="Itch.io"><i class="fab fa-itch-io"></i></a>
             {% endif %}
             {%- if site.rss_icon -%}
             <a href="{{ site.baseurl }}/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
