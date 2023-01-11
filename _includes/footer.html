@@ -2,6 +2,16 @@
     <footer class="fixed-bottom">
       <div class="container mt-0">
         &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
+        {% if
+          site.gh_edit_link and
+          site.gh_edit_link_text and
+          site.gh_edit_repository and
+          site.gh_edit_branch and
+          site.gh_edit_view_mode
+        %}
+          Think something could be improved?
+          <a href="{{ site.gh_edit_repository }}/{{ site.gh_edit_view_mode }}/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}{% if page.collection and site.collections_dir %}/{{ site.collections_dir }}{% endif %}/{{ page.path }}" id="edit-this-page">{{ site.gh_edit_link_text }}</a>
+        {%- endif %}
         {%- if site.impressum_path -%}
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
         {%- endif -%}
@@ -15,6 +25,16 @@
     <footer class="sticky-bottom mt-5">
       <div class="container">
         &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
+        {% if
+          site.gh_edit_link and
+          site.gh_edit_link_text and
+          site.gh_edit_repository and
+          site.gh_edit_branch and
+          site.gh_edit_view_mode
+        %}
+          Think something could be improved?
+          <a href="{{ site.gh_edit_repository }}/{{ site.gh_edit_view_mode }}/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}{% if page.collection and site.collections_dir %}/{{ site.collections_dir }}{% endif %}/{{ page.path }}" id="edit-this-page">{{ site.gh_edit_link_text }}</a>
+        {%- endif %}
         {%- if site.impressum_path -%}
         <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
         {%- endif -%}

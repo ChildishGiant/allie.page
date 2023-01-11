@@ -9,7 +9,7 @@ display_categories: [current, retired]
 horizontal: false
 ---
 
-For smaller projects, I've grouped them into [micro projects](/micro-projects/)
+For smaller projects, I've grouped them into [micro projects](/micro-projects/). I also have a [contributions](/contributions/) page to show work on other people's projects.
 
 <!-- pages/projects.md -->
 <div class="projects">

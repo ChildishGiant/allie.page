@@ -7,10 +7,9 @@ first_name: Allie
 # middle_name:
 last_name: Law
 email: allie@cloverleaf.app
-description: A site for all things oversized and infantile.
+description: Allie Law's personal website. Mainly used for my portfolio and CV.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -21,6 +20,14 @@ url: https://allie.page/ # the base hostname & protocol for your site
 last_updated: true # set to true if you want to display last updated in the footer
 # impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: https://github.com/ChildishGiant/childishgiant.github.io # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+# gh_edit_source: docs # the source that your files originate from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------
