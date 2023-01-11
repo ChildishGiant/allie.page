@@ -543,20 +543,9 @@ footer.sticky-bottom {
           }
         }
       }
-      .links {
-        a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-          &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
-          }
-        }
-      }
+
+
+
       .badges {
         span {
           display: inline-block;
@@ -724,3 +713,26 @@ progress {
      display: block;
      height: inherit;
  }
+
+// Allie Modifications
+
+a.btn {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  &:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+  }
+}
+
+.d-flex > figure {
+  margin: auto;
+}
+
+.github-icon, .itch-icon {
+  padding-right: .5rem;
+}

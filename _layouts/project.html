@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<!-- project.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">
+              {{ page.title }}
+              {%- if page.itch %}
+                <a href="{{ page.itch }}" class="btn btn-sm z-depth-0 rounded" role="button">
+                  <i class="fab fa-itch-io"></i> Play on Itch.io
+                </a>
+              {%- endif %}
+              {%- if page.github %}
+                <a href="{{ page.github }}" class="btn btn-sm z-depth-0 rounded" role="button">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              {%- endif %}
+            </h1>
+            <p class="post-description">{{ page.description }}</p>
+          </header>
+
+          <article>
+            {{ content }}
+          </article>
+
+        </div>
