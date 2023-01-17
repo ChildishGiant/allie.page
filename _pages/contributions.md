@@ -2,7 +2,7 @@
 layout: page
 title: Contributions
 permalink: /contributions/
-description: This is for small contributions that are too small for their own page.
+description: This is for contributions to other people's open source projects.
 ---
 
 ## [Materialize](https://github.com/materializecss/materialize)
