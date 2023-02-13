@@ -183,6 +183,10 @@
         {%- capture link -%}https://{{ site.itch_id }}.itch.io{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
+    {%- if site.osm_id -%}
+        {%- capture link -%}https://www.openstreetmap.org/user/{{ site.osm_id }}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
     {%- if sameaslinks != blank -%}
         {%- assign sameaslinks = sameaslinks | split: "" -%}
     {%- endif -%}
