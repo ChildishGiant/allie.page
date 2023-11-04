@@ -1,110 +1,110 @@
-            {%- if site.email -%}
-            <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope"></i></a>
-            {% endif %}
-            {%- if site.telegram_username -%}
-            <a href="https://telegram.me/{{ site.telegram_username }}" title="telegram"><i class="fab fa-telegram"></i></a>
-            {% endif %}
-            {%- if site.whatsapp_number -%}
-            <a href="https://wa.me/{{ site.whatsapp_number }}" title="whatsapp"><i class="fab fa-whatsapp"></i></a>
-            {% endif %}
-            {%- if site.orcid_id -%}
-            <a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID"><i class="ai ai-orcid"></i></a>
-            {% endif %}
-            {%- if site.scholar_userid -%}
-            <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-            {% endif %}
-            {%- if site.semanticscholar_id -%}
-            <a href="https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}" title="Semantic Scholar"><i class="ai ai-semantic-scholar"></i></a>
-            {% endif %}
-            {%- if site.publons_id -%}
-            <a href="https://publons.com/a/{{ site.publons_id }}/" title="Publons"><i class="ai ai-publons"></i></a>
-            {% endif %}
-            {%- if site.research_gate_profile -%}
-            <a href="https://www.researchgate.net/profile/{{site.research_gate_profile}}/" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
-            {% endif %}
-            {%- if site.github_username -%}
-            <a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fab fa-github"></i></a>
-            {% endif %}
-            {%- if site.linkedin_username -%}
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            {% endif %}
-            {%- if site.twitter_username -%}
-            <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter"><i class="fab fa-twitter"></i></a>
-            {% endif %}
-            {%- if site.mastodon_username -%}
-            <a rel="me" href="https://{{ site.mastodon_username  }}" title="Mastodon"><i class="fab fa-mastodon"></i></a>
-            {% endif %}
-            {%- if site.medium_username -%}
-            <a href="https://medium.com/@{{ site.medium_username }}" title="Medium"><i class="fab fa-medium"></i></a>
-            {% endif %}
-            {%- if site.quora_username -%}
-            <a href="https://www.quora.com/profile/{{ site.quora_username }}" title="Quora"><i class="fab fa-quora"></i></a>
-            {% endif %}
-            {%- if site.blogger_url -%}
-            <a href="{{ site.blogger_url }}" title="Blogger"><i class="fab fa-blogger-b"></i></a>
-            {% endif %}
-            {%- if site.work_url -%}
-            <a href="{{ site.work_url }}" title="Work"><i class="fas fa-briefcase"></i></a>
-            {% endif %}
-            {%- if site.wikidata_id -%}
-            <a href="https://www.wikidata.org/wiki/{{ site.wikidata_id }}" title="Wikidata"><i class="fas fa-barcode"></i></a>
-            {% endif %}
-            {%- if site.wikipedia_id -%}
-            <a href="https://wikipedia.org/wiki/User:{{ site.wikipedia_id }}" title="Wikipedia"><i class="fab fa-wikipedia-w"></i></a>
-            {% endif %}
-            {%- if site.strava_userid -%}
-            <a href="https://www.strava.com/athletes/{{ site.strava_userid }}" title="Strava"><i class="fab fa-strava"></i></a>
-            {% endif %}
-            {%- if site.keybase_username -%}
-            <a href="https://keybase.io/{{ site.keybase_username }}" title="Keybase"><i class="fab fa-keybase"></i></a>
-            {% endif %}
-            {%- if site.gitlab_username -%}
-            <a href="https://gitlab.com/{{ site.gitlab_username }}" title="GitLab"><i class="fab fa-gitlab"></i></a>
-            {% endif %}
-            {%- if site.dblp_url -%}
-            <a href="{{ site.dblp_url }}" title="DBLP"><i class="ai ai-dblp"></i></a>
-            {% endif %}
-            {%- if site.stackoverflow_id -%}
-            <a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" title="Stackoverflow"><i class="fab fa-stack-overflow"></i></a>
-            {% endif %}
-            {%- if site.kaggle_id -%}
-            <a href="https://www.kaggle.com/{{ site.kaggle_id }}" title="Kaggle"><i class="fab fa-kaggle"></i></a>
-            {% endif %}
-            {%- if site.lastfm_id -%}
-            <a href="https://www.last.fm/user/{{ site.lastfm_id }}" title="Last FM"><i class="fab fa-lastfm"></i></a>
-            {% endif %}
-            {%- if site.spotify_id -%}
-            <a href="https://open.spotify.com/user/{{ site.spotify_id }}" title="Last FM"><i class="fab fa-spotify"></i></a>
-            {% endif %}
-            {%- if site.pinterest_id -%}
-            <a href="https://www.pinterest.com/{{ site.pinterest_id }}" title="Pinterest"><i class="fab fa-pinterest"></i></a>
-            {% endif %}
-            {%- if site.unsplash_id -%}
-            <a href="https://unsplash.com/@{{ site.unsplash_id }}" title="Unsplash"><i class="fab fa-unsplash"></i></a>
-            {% endif %}
-            {%- if site.instagram_id -%}
-            <a href="https://instagram.com/{{ site.instagram_id }}" title="Instagram"><i class="fab fa-instagram"></i></a>
-            {% endif %}
-            {%- if site.facebook_id -%}
-            <a href="https://facebook.com/{{ site.facebook_id }}" title="Facebook"><i class="fab fa-facebook"></i></a>
-            {% endif %}
-            {%- if site.youtube_id -%}
-            <a href="https://youtube.com/@{{ site.youtube_id }}" title="YouTube"><i class="fab fa-youtube"></i></a>
-            {% endif %}
-            {%- if site.discord_id -%}
-            <a href="https://discord.com/users/{{ site.discord_id }}" title="Discord"><i class="fab fa-discord"></i></a>
-            {% endif %}
-            {%- if site.itch_id -%}
-            <a href="https://{{ site.itch_id }}.itch.io/" title="Itch.io"><i class="fab fa-itch-io"></i></a>
-            {% endif %}
-            {%- if site.osm_id -%}
-            <a href="https://www.openstreetmap.org/user/{{ site.osm_id }}" title="OpenStreetMap" id="osm">
-              <!-- Manually align icon ... see https://github.com/FortAwesome/Font-Awesome/issues/4317  -->
-              <svg style="margin-bottom: 10px;" xmlns="http://www.w3.org/2000/svg" width="47.95" height="48" viewBox="0 0 53.28 53.33"><path d="M49.15 453.55c-.79-.2-1.2-.52-3.3-2.63-2.51-2.5-2.67-2.74-2.67-4.04 0-1.46-.43-.94 7.58-8.97 8.08-8.1 7.67-7.75 9.13-7.75.68 0 .85.04 1.4.32l.61.3 1.96-1.95 1.96-1.96-.49-.77a17.21 17.21 0 0 1 24.13-23.5 17.3 17.3 0 0 1 7.48 11.94c.16 1.06.16 3.55 0 4.66a17 17 0 0 1-4.95 9.9 15.3 15.3 0 0 1-4.38 3.15 16.26 16.26 0 0 1-6.47 1.8 17.4 17.4 0 0 1-10.47-2.6l-.76-.5-1.96 1.96-1.96 1.96.31.62c.28.55.31.72.32 1.4 0 1.46.35 1.05-7.7 9.1-6.21 6.19-7.17 7.1-7.64 7.32-.61.28-1.55.39-2.13.24zm33.3-22.52c4.48-.82 8.39-3.8 10.35-7.89a14.34 14.34 0 0 0-10.33-20.38c-1.3-.27-4.07-.24-5.43.05-2.03.43-3.9 1.24-5.5 2.39-1 .7-2.65 2.35-3.35 3.34a14.35 14.35 0 0 0 .86 17.78 14.43 14.43 0 0 0 8.76 4.8c1.14.17 3.47.13 4.64-.09zm-3.97-1.94a13.34 13.34 0 0 1-3.91-1.18l-.6-.3v-5.57H72.9c-.92 0-2.18.18-3.1.44-.11.04-.16.18-.18.54l-.03.5-.46-.88a11 11 0 0 1-1.37-5.74c0-1.8.13-2.62.63-4.06.26-.76.91-2.11 1.2-2.49.12-.16.14-.12.14.38v.55l3.15-.03 3.14-.02.03-.8.03-.79h-2.12v-3.45l.37-.2a14.66 14.66 0 0 1 3.2-1.11c.13-.04.14.01.07.37-.13.68-.1 2.56.06 3.23.31 1.33 1.1 2.3 2.15 2.71.63.24 1.81.28 2.5.1.67-.18 1.4-.72 1.78-1.29.55-.84.75-1.57.8-3.02l.05-1.27.77.4c.9.47 1.99 1.25 2.78 2 .54.52.55.55.55 1.03v.5H86.94v1.64h3.9l.21.43.21.43h-1.08c-.74 0-1.41.07-2.16.21l-1.08.22v.8c0 .43.02.8.04.8l.97-.2 1.02-.2c.05 0 .08 1.27.08 2.89v2.87l-1.03.03-1.03.03-.03.79-.03.8 2.26.02 2.26.02-.17.38-.17.38h-1.2c-1.1.01-1.23.03-1.74.28-1.3.64-2.01 2.1-2.04 4.22v1.04l-.65.33c-.56.3-2.52 1.01-2.77 1.01-.06 0-.1-1.34-.1-3.41v-3.41h-1.04c-.67 0-1.38.07-2 .2-1.4.28-1.28.18-1.28 1.05 0 .57.04.77.13.77.07 0 .51-.09.98-.2l.93-.19c.04 0 .08 1.23.08 2.74v2.74l-.84-.01c-.47-.01-.95-.03-1.09-.05zm-4.4-7.99a3.84 3.84 0 0 0 2.05-2.73c.18-.77.18-2.52 0-3.37a3.65 3.65 0 0 0-2.15-2.77c-.76-.3-2.05-.3-2.82 0-1.08.42-1.84 1.43-2.14 2.86-.18.84-.18 2.4 0 3.23.3 1.4 1.17 2.49 2.3 2.85.77.26 2.1.22 2.77-.07zm-2.22-1.61c-.39-.34-.58-1-.64-2.3a7.4 7.4 0 0 1 .32-2.9 1.1 1.1 0 0 1 1.16-.67c.83.08 1.15.72 1.24 2.51.1 1.86-.21 3.23-.78 3.49-.44.2-.97.14-1.3-.13zm10.6 1.68c1.67-.51 2.54-2.24 2.44-4.85-.09-2.21-.88-3.58-2.4-4.14-.63-.24-2-.21-2.68.05-1.08.41-1.84 1.39-2.16 2.76-.22.95-.14 3.12.14 3.93.45 1.25 1.3 2.09 2.39 2.34.65.15 1.6.12 2.26-.09zm-1.87-1.58c-.56-.3-.81-1.48-.73-3.36.06-1.43.16-1.86.53-2.28.53-.59 1.52-.42 1.87.32.38.8.45 3.36.11 4.49-.19.63-.58.97-1.13.97-.22 0-.51-.07-.65-.14zm-9.5 5.75c-.82-.85-1.12-1.27-.95-1.32.32-.1 1.56-.35 1.59-.31.02.02.02.54 0 1.16l-.02 1.13-.63-.66zm17.44-.13c.08-.67.34-1.29.64-1.47.31-.21.7-.3.9-.19.13.08.09.17-.28.66-.23.31-.63.78-.87 1.05l-.45.48.06-.53zm2.74-9.34.01-3.68.29.87c.57 1.7.77 3.54.57 5.2-.16 1.29-.16 1.28-.55 1.28h-.33l.01-3.67zm-10.54-6.13c-.28-.11-.6-.53-.73-1-.13-.45-.16-3.18-.05-3.73.08-.34.1-.36.43-.36.69 0 2.04.22 2.08.35.03.06.08.54.11 1.06a8.68 8.68 0 0 1-.31 3.09 1.2 1.2 0 0 1-1.53.6zm-10.52-.26c.05-.1.42-.52.81-.94l.73-.77v1.87h-.81c-.75 0-.81-.01-.73-.16zm3.84 38.13c-2.68-.77-4.9-1.43-4.93-1.47a244.6 244.6 0 0 1 2.82-10c.05-.05 9.53 2.6 9.92 2.78.14.07 0 .65-1.18 4.74l-1.43 5.02c-.06.2-.15.35-.22.35-.06 0-2.3-.64-4.98-1.42zm6.55 1.18c0-.12 2.75-9.75 2.8-9.78.1-.07 9.71-2.76 9.75-2.72.04.04-2.69 9.75-2.76 9.8-.05.04-9.28 2.68-9.58 2.74-.11.02-.21 0-.21-.04zm-15.98-4.3c1.9-1.91 3.6-3.66 3.76-3.88.39-.5.92-1.64 1.06-2.28.06-.27.12-.8.13-1.17l.03-.7.4-.11c.23-.06.44-.1.46-.08.05.05-2.71 9.71-2.8 9.8-.05.03-1.52.48-3.29.98l-3.2.91 3.45-3.47zm18.63-6.87a3.38 3.38 0 0 1-.13-.42l-.1-.36.35-.06a20.91 20.91 0 0 0 8.79-3.85c.36-.27.56-.38.6-.3.11.37.6 2.14.59 2.15-.08.08-10.07 2.88-10.1 2.84zm-33.9-2.92c-.11-.1-2.65-8.7-2.84-9.65-.04-.19.33-.1 4.89 1.2 4.76 1.37 4.93 1.42 5 1.67.05.22.01.29-.29.5-.2.14-1.73 1.63-3.42 3.32-1.7 1.7-3.1 3.08-3.13 3.08a.58.58 0 0 1-.2-.12zm1.85-9.85-4.87-1.4c-.04-.03 2.83-9.97 2.88-10.03.05-.05 9.95 2.72 10.05 2.82.02.01-.6 2.28-1.4 5.03-1.29 4.54-1.44 5-1.61 4.99-.11 0-2.38-.64-5.05-1.4zm6.65 1.21 1-3.44.94-3.32.13.72c.21 1.25.59 2.67 1.04 3.91.24.66.42 1.22.4 1.23-.01.02-.74.23-1.61.48l-1.77.5c-.13.04-.17.01-.13-.08zm-3.67-12.64c-2.67-.77-4.88-1.43-4.9-1.48-.1-.14-2.81-9.7-2.77-9.75.06-.05 9.68 2.7 9.78 2.8.1.12 2.87 9.85 2.8 9.83-.04 0-2.25-.63-4.91-1.4zm4.82-3.85-1.16-4.06-.18-.64 3.8-1.08 3.96-1.14c.08-.03-.19.3-.59.75a19.57 19.57 0 0 0-4.7 9.3c0 .65-.26-.06-1.13-3.13z" transform="matrix(.98879 0 0 .98879 -42.7 -395.2)"/></svg>
-            </a>
-            <!-- Styles to fix hover to match the rest -->
-            <style>#osm {fill: var(--global-text-color);transition:none;} #osm:hover {text-decoration: none; fill:var(--global-theme-color);}</style>
-            {% endif %}
-            {%- if site.rss_icon -%}
-            <a href="{{ site.baseurl }}/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
-            {% endif %}
+{%- if site.email -%}
+<a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fas fa-envelope"></i></a>
+{% endif %}
+{%- if site.telegram_username -%}
+<a href="https://telegram.me/{{ site.telegram_username }}" title="telegram"><i class="fab fa-telegram"></i></a>
+{% endif %}
+{%- if site.whatsapp_number -%}
+<a href="https://wa.me/{{ site.whatsapp_number }}" title="whatsapp"><i class="fab fa-whatsapp"></i></a>
+{% endif %}
+{%- if site.orcid_id -%}
+<a href="https://orcid.org/{{ site.orcid_id }}" title="ORCID"><i class="ai ai-orcid"></i></a>
+{% endif %}
+{%- if site.scholar_userid -%}
+<a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+{% endif %}
+{%- if site.semanticscholar_id -%}
+<a href="https://www.semanticscholar.org/author/{{ site.semanticscholar_id }}" title="Semantic Scholar"><i class="ai ai-semantic-scholar"></i></a>
+{% endif %}
+{%- if site.publons_id -%}
+<a href="https://publons.com/a/{{ site.publons_id }}/" title="Publons"><i class="ai ai-publons"></i></a>
+{% endif %}
+{%- if site.research_gate_profile -%}
+<a href="https://www.researchgate.net/profile/{{site.research_gate_profile}}/" title="ResearchGate"><i class="ai ai-researchgate"></i></a>
+{% endif %}
+{%- if site.github_username -%}
+<a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fab fa-github"></i></a>
+{% endif %}
+{%- if site.linkedin_username -%}
+<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+{% endif %}
+{%- if site.twitter_username -%}
+<a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter"><i class="fab fa-twitter"></i></a>
+{% endif %}
+{%- if site.mastodon_username -%}
+<a rel="me" href="https://{{ site.mastodon_username  }}" title="Mastodon"><i class="fab fa-mastodon"></i></a>
+{% endif %}
+{%- if site.medium_username -%}
+<a href="https://medium.com/@{{ site.medium_username }}" title="Medium"><i class="fab fa-medium"></i></a>
+{% endif %}
+{%- if site.quora_username -%}
+<a href="https://www.quora.com/profile/{{ site.quora_username }}" title="Quora"><i class="fab fa-quora"></i></a>
+{% endif %}
+{%- if site.blogger_url -%}
+<a href="{{ site.blogger_url }}" title="Blogger"><i class="fab fa-blogger-b"></i></a>
+{% endif %}
+{%- if site.work_url -%}
+<a href="{{ site.work_url }}" title="Work"><i class="fas fa-briefcase"></i></a>
+{% endif %}
+{%- if site.wikidata_id -%}
+<a href="https://www.wikidata.org/wiki/{{ site.wikidata_id }}" title="Wikidata"><i class="fas fa-barcode"></i></a>
+{% endif %}
+{%- if site.wikipedia_id -%}
+<a href="https://wikipedia.org/wiki/User:{{ site.wikipedia_id }}" title="Wikipedia"><i class="fab fa-wikipedia-w"></i></a>
+{% endif %}
+{%- if site.strava_userid -%}
+<a href="https://www.strava.com/athletes/{{ site.strava_userid }}" title="Strava"><i class="fab fa-strava"></i></a>
+{% endif %}
+{%- if site.keybase_username -%}
+<a href="https://keybase.io/{{ site.keybase_username }}" title="Keybase"><i class="fab fa-keybase"></i></a>
+{% endif %}
+{%- if site.gitlab_username -%}
+<a href="https://gitlab.com/{{ site.gitlab_username }}" title="GitLab"><i class="fab fa-gitlab"></i></a>
+{% endif %}
+{%- if site.dblp_url -%}
+<a href="{{ site.dblp_url }}" title="DBLP"><i class="ai ai-dblp"></i></a>
+{% endif %}
+{%- if site.stackoverflow_id -%}
+<a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" title="Stackoverflow"><i class="fab fa-stack-overflow"></i></a>
+{% endif %}
+{%- if site.kaggle_id -%}
+<a href="https://www.kaggle.com/{{ site.kaggle_id }}" title="Kaggle"><i class="fab fa-kaggle"></i></a>
+{% endif %}
+{%- if site.lastfm_id -%}
+<a href="https://www.last.fm/user/{{ site.lastfm_id }}" title="Last FM"><i class="fab fa-lastfm"></i></a>
+{% endif %}
+{%- if site.spotify_id -%}
+<a href="https://open.spotify.com/user/{{ site.spotify_id }}" title="Last FM"><i class="fab fa-spotify"></i></a>
+{% endif %}
+{%- if site.pinterest_id -%}
+<a href="https://www.pinterest.com/{{ site.pinterest_id }}" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+{% endif %}
+{%- if site.unsplash_id -%}
+<a href="https://unsplash.com/@{{ site.unsplash_id }}" title="Unsplash"><i class="fab fa-unsplash"></i></a>
+{% endif %}
+{%- if site.instagram_id -%}
+<a href="https://instagram.com/{{ site.instagram_id }}" title="Instagram"><i class="fab fa-instagram"></i></a>
+{% endif %}
+{%- if site.facebook_id -%}
+<a href="https://facebook.com/{{ site.facebook_id }}" title="Facebook"><i class="fab fa-facebook"></i></a>
+{% endif %}
+{%- if site.youtube_id -%}
+<a href="https://youtube.com/@{{ site.youtube_id }}" title="YouTube"><i class="fab fa-youtube"></i></a>
+{% endif %}
+{%- if site.discord_id -%}
+<a href="https://discord.com/users/{{ site.discord_id }}" title="Discord"><i class="fab fa-discord"></i></a>
+{% endif %}
+{%- if site.itch_id -%}
+<a href="https://{{ site.itch_id }}.itch.io/" title="Itch.io"><i class="fab fa-itch-io"></i></a>
+{% endif %}
+{%- if site.osm_id -%}
+<a href="https://www.openstreetmap.org/user/{{ site.osm_id }}" title="OpenStreetMap" id="osm">
+  <!-- Manually align icon ... see https://github.com/FortAwesome/Font-Awesome/issues/4317  -->
+  <svg style="margin-bottom: 10px;" xmlns="http://www.w3.org/2000/svg" width="47.95" height="48" viewBox="0 0 53.28 53.33"><path d="M49.15 453.55c-.79-.2-1.2-.52-3.3-2.63-2.51-2.5-2.67-2.74-2.67-4.04 0-1.46-.43-.94 7.58-8.97 8.08-8.1 7.67-7.75 9.13-7.75.68 0 .85.04 1.4.32l.61.3 1.96-1.95 1.96-1.96-.49-.77a17.21 17.21 0 0 1 24.13-23.5 17.3 17.3 0 0 1 7.48 11.94c.16 1.06.16 3.55 0 4.66a17 17 0 0 1-4.95 9.9 15.3 15.3 0 0 1-4.38 3.15 16.26 16.26 0 0 1-6.47 1.8 17.4 17.4 0 0 1-10.47-2.6l-.76-.5-1.96 1.96-1.96 1.96.31.62c.28.55.31.72.32 1.4 0 1.46.35 1.05-7.7 9.1-6.21 6.19-7.17 7.1-7.64 7.32-.61.28-1.55.39-2.13.24zm33.3-22.52c4.48-.82 8.39-3.8 10.35-7.89a14.34 14.34 0 0 0-10.33-20.38c-1.3-.27-4.07-.24-5.43.05-2.03.43-3.9 1.24-5.5 2.39-1 .7-2.65 2.35-3.35 3.34a14.35 14.35 0 0 0 .86 17.78 14.43 14.43 0 0 0 8.76 4.8c1.14.17 3.47.13 4.64-.09zm-3.97-1.94a13.34 13.34 0 0 1-3.91-1.18l-.6-.3v-5.57H72.9c-.92 0-2.18.18-3.1.44-.11.04-.16.18-.18.54l-.03.5-.46-.88a11 11 0 0 1-1.37-5.74c0-1.8.13-2.62.63-4.06.26-.76.91-2.11 1.2-2.49.12-.16.14-.12.14.38v.55l3.15-.03 3.14-.02.03-.8.03-.79h-2.12v-3.45l.37-.2a14.66 14.66 0 0 1 3.2-1.11c.13-.04.14.01.07.37-.13.68-.1 2.56.06 3.23.31 1.33 1.1 2.3 2.15 2.71.63.24 1.81.28 2.5.1.67-.18 1.4-.72 1.78-1.29.55-.84.75-1.57.8-3.02l.05-1.27.77.4c.9.47 1.99 1.25 2.78 2 .54.52.55.55.55 1.03v.5H86.94v1.64h3.9l.21.43.21.43h-1.08c-.74 0-1.41.07-2.16.21l-1.08.22v.8c0 .43.02.8.04.8l.97-.2 1.02-.2c.05 0 .08 1.27.08 2.89v2.87l-1.03.03-1.03.03-.03.79-.03.8 2.26.02 2.26.02-.17.38-.17.38h-1.2c-1.1.01-1.23.03-1.74.28-1.3.64-2.01 2.1-2.04 4.22v1.04l-.65.33c-.56.3-2.52 1.01-2.77 1.01-.06 0-.1-1.34-.1-3.41v-3.41h-1.04c-.67 0-1.38.07-2 .2-1.4.28-1.28.18-1.28 1.05 0 .57.04.77.13.77.07 0 .51-.09.98-.2l.93-.19c.04 0 .08 1.23.08 2.74v2.74l-.84-.01c-.47-.01-.95-.03-1.09-.05zm-4.4-7.99a3.84 3.84 0 0 0 2.05-2.73c.18-.77.18-2.52 0-3.37a3.65 3.65 0 0 0-2.15-2.77c-.76-.3-2.05-.3-2.82 0-1.08.42-1.84 1.43-2.14 2.86-.18.84-.18 2.4 0 3.23.3 1.4 1.17 2.49 2.3 2.85.77.26 2.1.22 2.77-.07zm-2.22-1.61c-.39-.34-.58-1-.64-2.3a7.4 7.4 0 0 1 .32-2.9 1.1 1.1 0 0 1 1.16-.67c.83.08 1.15.72 1.24 2.51.1 1.86-.21 3.23-.78 3.49-.44.2-.97.14-1.3-.13zm10.6 1.68c1.67-.51 2.54-2.24 2.44-4.85-.09-2.21-.88-3.58-2.4-4.14-.63-.24-2-.21-2.68.05-1.08.41-1.84 1.39-2.16 2.76-.22.95-.14 3.12.14 3.93.45 1.25 1.3 2.09 2.39 2.34.65.15 1.6.12 2.26-.09zm-1.87-1.58c-.56-.3-.81-1.48-.73-3.36.06-1.43.16-1.86.53-2.28.53-.59 1.52-.42 1.87.32.38.8.45 3.36.11 4.49-.19.63-.58.97-1.13.97-.22 0-.51-.07-.65-.14zm-9.5 5.75c-.82-.85-1.12-1.27-.95-1.32.32-.1 1.56-.35 1.59-.31.02.02.02.54 0 1.16l-.02 1.13-.63-.66zm17.44-.13c.08-.67.34-1.29.64-1.47.31-.21.7-.3.9-.19.13.08.09.17-.28.66-.23.31-.63.78-.87 1.05l-.45.48.06-.53zm2.74-9.34.01-3.68.29.87c.57 1.7.77 3.54.57 5.2-.16 1.29-.16 1.28-.55 1.28h-.33l.01-3.67zm-10.54-6.13c-.28-.11-.6-.53-.73-1-.13-.45-.16-3.18-.05-3.73.08-.34.1-.36.43-.36.69 0 2.04.22 2.08.35.03.06.08.54.11 1.06a8.68 8.68 0 0 1-.31 3.09 1.2 1.2 0 0 1-1.53.6zm-10.52-.26c.05-.1.42-.52.81-.94l.73-.77v1.87h-.81c-.75 0-.81-.01-.73-.16zm3.84 38.13c-2.68-.77-4.9-1.43-4.93-1.47a244.6 244.6 0 0 1 2.82-10c.05-.05 9.53 2.6 9.92 2.78.14.07 0 .65-1.18 4.74l-1.43 5.02c-.06.2-.15.35-.22.35-.06 0-2.3-.64-4.98-1.42zm6.55 1.18c0-.12 2.75-9.75 2.8-9.78.1-.07 9.71-2.76 9.75-2.72.04.04-2.69 9.75-2.76 9.8-.05.04-9.28 2.68-9.58 2.74-.11.02-.21 0-.21-.04zm-15.98-4.3c1.9-1.91 3.6-3.66 3.76-3.88.39-.5.92-1.64 1.06-2.28.06-.27.12-.8.13-1.17l.03-.7.4-.11c.23-.06.44-.1.46-.08.05.05-2.71 9.71-2.8 9.8-.05.03-1.52.48-3.29.98l-3.2.91 3.45-3.47zm18.63-6.87a3.38 3.38 0 0 1-.13-.42l-.1-.36.35-.06a20.91 20.91 0 0 0 8.79-3.85c.36-.27.56-.38.6-.3.11.37.6 2.14.59 2.15-.08.08-10.07 2.88-10.1 2.84zm-33.9-2.92c-.11-.1-2.65-8.7-2.84-9.65-.04-.19.33-.1 4.89 1.2 4.76 1.37 4.93 1.42 5 1.67.05.22.01.29-.29.5-.2.14-1.73 1.63-3.42 3.32-1.7 1.7-3.1 3.08-3.13 3.08a.58.58 0 0 1-.2-.12zm1.85-9.85-4.87-1.4c-.04-.03 2.83-9.97 2.88-10.03.05-.05 9.95 2.72 10.05 2.82.02.01-.6 2.28-1.4 5.03-1.29 4.54-1.44 5-1.61 4.99-.11 0-2.38-.64-5.05-1.4zm6.65 1.21 1-3.44.94-3.32.13.72c.21 1.25.59 2.67 1.04 3.91.24.66.42 1.22.4 1.23-.01.02-.74.23-1.61.48l-1.77.5c-.13.04-.17.01-.13-.08zm-3.67-12.64c-2.67-.77-4.88-1.43-4.9-1.48-.1-.14-2.81-9.7-2.77-9.75.06-.05 9.68 2.7 9.78 2.8.1.12 2.87 9.85 2.8 9.83-.04 0-2.25-.63-4.91-1.4zm4.82-3.85-1.16-4.06-.18-.64 3.8-1.08 3.96-1.14c.08-.03-.19.3-.59.75a19.57 19.57 0 0 0-4.7 9.3c0 .65-.26-.06-1.13-3.13z" transform="matrix(.98879 0 0 .98879 -42.7 -395.2)"/></svg>
+</a>
+<!-- Styles to fix hover to match the rest -->
+<style>#osm {fill: var(--global-text-color);transition:none;} #osm:hover {text-decoration: none; fill:var(--global-theme-color);}</style>
+{% endif %}
+{%- if site.rss_icon -%}
+<a href="{{ site.baseurl }}/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
+{% endif %}
