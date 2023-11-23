@@ -13,6 +13,9 @@ layout: default
 </style>
 {% endif %}
 
+<!-- Nutshell https://ncase.me/nutshell/ -->
+{% include scripts/nutshell.html %}
+
 <div class="post">
 
   <header class="post-header">
@@ -25,7 +28,7 @@ layout: default
         {% for tag in page.tags -%}
         <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}">
           <i class="fas fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
-          {% endfor -%}
+        {% endfor -%}
       {% endif %}
 
       {%- if categories != "" %}
@@ -33,7 +36,7 @@ layout: default
         {% for category in page.categories -%}
         <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}">
           <i class="fas fa-tag fa-sm"></i> {{ category }}</a> &nbsp;
-          {% endfor -%}
+        {% endfor -%}
       {% endif %}
 
     </p>
@@ -52,11 +55,11 @@ layout: default
   </article>
 
   {%- if page.related_publications != null and page.related_publications.size > 0 -%}
-  {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
-  <h2>References</h2>
-  <div class="publications">
-    {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
-  </div>
+    {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
+    </div>
   {%- endif %}
 
   {%- if site.related_blog_posts.enabled -%}

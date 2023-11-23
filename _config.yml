@@ -249,23 +249,23 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags: ['games', 'musings', 'code'] # this tags will be displayed on the front page of your blog
+display_tags: ['activism', 'code'] # this tags will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
-# scholar:
+scholar:
 
-#   last_name: [Einstein]
-#   first_name: [Albert, A.]
+  last_name: [Law]
+  first_name: [Allie]
 
-#   style: apa
-#   locale: en
+  style: apa
+  locale: en
 
-#   source: /_bibliography/
-#   bibliography: papers.bib
-#   bibliography_template: bib
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
 #   # Note: if you have latex math in your bibtex, the latex filter
 #   # preprocessing may conflict with MathJAX if the latter is enabled.
 #   # See https://github.com/alshedivat/al-folio/issues/357.

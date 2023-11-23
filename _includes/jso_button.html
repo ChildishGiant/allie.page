@@ -1,0 +1,38 @@
+<button {% if include.onclick %}onclick="{{ include.onclick }}"{% else %}onclick="window.location.href='https://juststopoil.org/donate'"{% endif %} class="jso-button">
+	{% if include.text %}{{ include.text }}{% else %}Donate{% endif %}
+</button>
+
+<style>
+	@font-face {
+		font-family: 'Jost';
+		font-style: normal;
+		font-weight: 400;
+		src: url('/assets/webfonts/Jost-VariableFont_wght.ttf') format('truetype');
+	}
+
+	@font-face {
+		font-family: 'Jost';
+		font-weight: bolder;
+		src: url('/assets/webfonts/Jost-Black.ttf') format('truetype');
+	}
+
+
+	.jso-button {
+		background-color: #FF6126;
+		color: #000;
+		border: #000 5px solid;
+		border-radius: .5em;
+		font-size: 3em;
+		padding: 3px 10px;
+		font-family: 'Jost', sans-serif;
+		font-weight: bolder;
+		transition: all .3s;
+		text-transform: uppercase;
+	}
+
+	.jso-button:hover {
+		background-color: #fff;
+		color: #FF6126;
+	}
+
+</style>

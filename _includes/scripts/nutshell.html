@@ -1,0 +1,42 @@
+<!-- Styling Nutshell -->
+<!-- Load Nutshell -->
+<script src="{{ '/assets/js/nutshell.js' | relative_url }}"></script>
+
+<style>
+	.nutshell-bubble, #nutshell-embed-modal-bubble {
+		background: var(--global-bg-color) !important;
+		color: var(--global-text-color) !important;
+		border-color: var(--global-text-color) !important;
+	}
+
+	.nutshell-ball-up, .nutshell-ball-down {
+		background: var(--global-text-color-light) !important;
+	}
+
+	.nutshell-bubble-overflow-close {
+		color: var(--global-text-color-light) !important;
+	}
+
+	.nutshell-bubble blockquote {
+		border-color: var(--global-theme-color) !important;
+	}
+</style>
+
+<script>
+	// Configure Nutshell to use the user's language if supported
+	let userLang = navigator.language || navigator.userLanguage;
+	// en, no en-GB or en-US etc
+	userLang = userLang.substring(0,2);
+
+	let languageToUse = 'en';
+
+	if (Object.keys(Nutshell.language).includes(userLang)) {
+		languageToUse = userLang;
+	}
+
+	Nutshell.setOptions({
+			startOnLoad: true, // Start Nutshell on load? (default: true)
+			lang: languageToUse, // Language (default: 'en', which is English)
+			dontEmbedHeadings: false, // If 'true', removes the "embed this as a nutshell" option on headings
+	});
+	</script>

@@ -194,10 +194,6 @@
         {%- capture link -%}https://facebook.com/{{ site.facebook_id }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
-    {%- if site.youtube_id -%}
-        {%- capture link -%}https://youtube.com/@{{ site.youtube_id }}{%- endcapture -%}
-        {%- assign sameaslinks = sameaslinks | push: link -%}
-    {%- endif -%}
     {%- if site.discord_id -%}
         {%- capture link -%}https://discord.com/users/{{ site.discord_id }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
@@ -209,6 +205,7 @@
     {%- if site.osm_id -%}
         {%- capture link -%}https://www.openstreetmap.org/user/{{ site.osm_id }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
     {%- if site.zotero_username -%}
         {%- capture link -%}https://www.zotero.org/{{ site.zotero_username }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
