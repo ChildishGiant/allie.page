@@ -18,7 +18,7 @@ In 2021 [Dodie](https://en.wikipedia.org/wiki/Dodie) released a video with a han
 attempt to solve the puzzle before all the letters were shown (we succeeded!)
 
 ### [esbuild-plugin-hjson](https://github.com/ChildishGiant/esbuild-plugin-hjson)
-A pluging for the [esbuild](https://esbuild.github.io/) Javascript bundler to allow it to load [hjson](https://hjson.github.io/) files.
+A plugin for the [esbuild](https://esbuild.github.io/) Javascript bundler to allow it to load [hjson](https://hjson.github.io/) files.
 
 ### [braille-typer](https://github.com/ChildishGiant/braille-typer)
 A site that lets you input text from braille and see what it says.
