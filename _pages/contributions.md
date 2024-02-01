@@ -16,9 +16,10 @@ maintenance, updating deps, fixing bugs, reviewing, writing CI with GitHub Actio
 * [OneBitDitherTool](https://github.com/timheigames/onebitdithertool) - [Added linux support](https://github.com/timheigames/onebitdithertool/pull/1)
 * [Egyptian Mouse Pounce](https://github.com/dozingcat/MousePounce) - [Added a gamerule option](https://github.com/dozingcat/MousePounce/pull/12)
 * [Yuescript](https://yuescript.org/doc) - [A few additions to the docs](https://github.com/pigpigyyy/Yuescript/commits?author=ChildishGiant)
+* [Moobo](https://github.com/brain-child/moobo) - [Added a keyboard shortcut](https://github.com/brain-child/moobo/pull/10)
 
 
 ---
 #### To be written up
 
-* [https://github.com/DPS2004/beatblock_game](https://github.com/DPS2004/beatblock_game)
+* [https://github.com/DPS2004/beatblock_game](https://github.com/DPS2004/beatblock_game) - <https://github.com/ChildishGiant/beatblock/commits/playdate/?author=ChildishGiant>
