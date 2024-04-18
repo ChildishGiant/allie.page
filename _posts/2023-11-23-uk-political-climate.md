@@ -98,7 +98,7 @@ If you enjoyed this blog post my ask is that you donate an hour's wage per month
         {% include jso_button.html %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include jso_button.html onclick="window.location.href='https://rebeccastonehill.com'" text="poems" %}
+        {% include jso_button.html onclick="window.location.href='https://rebeccastonehill.com/category/personal'" text="poems" %}
     </div>
 </div>
 
